@@ -1,0 +1,51 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "apiVersion": {
+            "value": "2020-01-01"
+        },
+        "sku": {
+            "value": "Standard"
+        },
+        "domainConfigurationType": {
+            "value": "FullySynced"
+        },
+        "domainName": {
+            "value": "rtd.onmicrosoft.com"
+        },
+        "filteredSync": {
+            "value": "Disabled"
+        },
+        "location": {
+            "value": "northeurope"
+        },
+        "notificationSettings": {
+            "value": {
+                "notifyGlobalAdmins": "Enabled",
+                "notifyDcAdmins": "Enabled",
+                "additionalRecipients": []
+            }
+        },
+        "subnetName": {
+            "value": "aadds-subnet"
+        },
+        "tags": {
+            "value": {}
+        },
+        "vnetName": {
+            "value": "aadds-vnet"
+        },
+        "vnetAddressPrefixes": {
+            "value": [
+                "10.0.1.0/24"
+            ]
+        },
+        "subnetAddressPrefix": {
+            "value": "10.0.1.0/24"
+        },
+        "nsgName": {
+            "value": "aadds-nsg"
+        }
+    }
+}
